@@ -112,6 +112,31 @@
           <button type="submit">Enviar</button>
         </form>
       </section>
+
+      <section aria-labelledby="resena">
+        <h3 id="resena">Valora nuestros platos</h3>
+        <form>
+          <p>
+            <label for="resena-plato">Plato:</label>
+            <select id="resena-plato" name="plato" required>
+              <option value="">Seleccione un plato</option>
+              <option value="tacos-al-pastor">Tacos al pastor</option>
+              <option value="enchiladas-rojas">Enchiladas rojas</option>
+              <option value="chile-en-nogada">Chile en nogada</option>
+            </select>
+          </p>
+          <p>
+            <label for="resena-nombre">Nombre:</label>
+            <input type="text" id="resena-nombre" name="nombre" required>
+          </p>
+          <p>
+            <label for="resena-texto">Reseña del plato:</label>
+            <br>
+            <textarea id="resena-texto" name="resena" rows="5" cols="40" required></textarea>
+          </p>
+          <button type="submit">Enviar reseña</button>
+        </form>
+      </section>
     </section>
   </main>
 
