@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Miguel Moreno Morales">
+  <meta name="description" content="Formularios de inscripción y cuestionario para las prácticas de informática.">
+  <meta name="keywords" content="formularios, inscripción, cuestionario, informática">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+  <header>
+    <h1>Formularios</h1>
+    <nav aria-label="Navegación principal">
+      <a href="../index.html">Volver al menú principal</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Formularios de las prácticas que no pertenecen al restaurante.</p>
+    <section aria-labelledby="inscripcion">
+      <h2 id="inscripcion">Hoja de inscripción</h2>
+      <form>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <p>
+            <label for="inscripcion-nombre">Nombre:</label>
+            <input type="text" id="inscripcion-nombre" name="nombre">
+            <label for="inscripcion-apellidos">Apellidos:</label>
+            <input type="text" id="inscripcion-apellidos" name="apellidos">
+            <label for="inscripcion-dni">DNI:</label>
+            <input type="text" id="inscripcion-dni" name="dni">
+          </p>
+          <p>
+            <label for="inscripcion-localidad">Localidad de nacimiento:</label>
+            <input type="text" id="inscripcion-localidad" name="localidad">
+            <label for="inscripcion-provincia">Provincia:</label>
+            <select id="inscripcion-provincia" name="provincia">
+              <option value="a-coruna">A Coruña</option>
+              <option value="alava">Álava</option>
+              <option value="albacete">Albacete</option>
+              <option value="alicante">Alicante</option>
+              <option value="almeria">Almería</option>
+              <option value="asturias">Asturias</option>
+              <option value="avila">Ávila</option>
+              <option value="badajoz">Badajoz</option>
+              <option value="barcelona">Barcelona</option>
+              <option value="burgos">Burgos</option>
+              <option value="caceres">Cáceres</option>
+              <option value="cadiz">Cádiz</option>
+              <option value="cantabria">Cantabria</option>
+              <option value="castellon">Castellón</option>
+              <option value="ciudad-real">Ciudad Real</option>
+              <option value="cordoba">Córdoba</option>
+              <option value="cuenca">Cuenca</option>
+              <option value="girona">Girona</option>
+              <option value="granada">Granada</option>
+              <option value="guadalajara">Guadalajara</option>
+              <option value="gipuzkoa">Gipuzkoa</option>
+              <option value="huelva">Huelva</option>
+              <option value="huesca">Huesca</option>
+              <option value="illes-balears">Illes Balears</option>
+              <option value="jaen">Jaén</option>
+              <option value="leon">León</option>
+              <option value="lleida">Lleida</option>
+              <option value="lugo">Lugo</option>
+              <option value="madrid">Madrid</option>
+              <option value="malaga">Málaga</option>
+              <option value="murcia">Murcia</option>
+              <option value="navarra">Navarra</option>
+              <option value="ourense">Ourense</option>
+              <option value="palencia">Palencia</option>
+              <option value="las-palmas">Las Palmas</option>
+              <option value="pontevedra">Pontevedra</option>
+              <option value="la-rioja">La Rioja</option>
+              <option value="salamanca">Salamanca</option>
+              <option value="santa-cruz-de-tenerife">Santa Cruz de Tenerife</option>
+              <option value="segovia">Segovia</option>
+              <option value="sevilla">Sevilla</option>
+              <option value="soria">Soria</option>
+              <option value="tarragona">Tarragona</option>
+              <option value="teruel">Teruel</option>
+              <option value="toledo">Toledo</option>
+              <option value="valencia">Valencia</option>
+              <option value="valladolid">Valladolid</option>
+              <option value="bizkaia">Bizkaia</option>
+              <option value="zamora">Zamora</option>
+              <option value="zaragoza">Zaragoza</option>
+            </select>
+            <label for="inscripcion-fecha">Fecha de nacimiento:</label>
+            <input type="date" id="inscripcion-fecha" name="fecha-nacimiento">
+          </p>
+          <p>
+            <label for="inscripcion-direccion">Dirección:</label>
+            <input type="text" id="inscripcion-direccion" name="direccion">
+            <label for="inscripcion-codigo-postal">Código postal:</label>
+            <input type="text" id="inscripcion-codigo-postal" name="codigo-postal">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Forma de acceso</legend>
+          <p>
+            <input type="radio" id="inscripcion-directo" name="forma-acceso" value="directo">
+            <label for="inscripcion-directo">Directo</label>
+          </p>
+          <ul>
+            <li>
+              <input type="radio" id="inscripcion-bachillerato" name="modalidad" value="bachillerato">
+              <label for="inscripcion-bachillerato">Bachillerato Log. Modalidad:</label>
+              <input type="text" name="modalidad-bachillerato" aria-label="Modalidad de bachillerato">
+            </li>
+            <li>
+              <input type="radio" id="inscripcion-experimental" name="modalidad" value="experimental">
+              <label for="inscripcion-experimental">Experimental</label>
+            </li>
+            <li>
+              <input type="radio" id="inscripcion-cou" name="modalidad" value="cou">
+              <label for="inscripcion-cou">COU Opción:</label>
+              <input type="text" name="opcion-cou" aria-label="Opción de COU">
+            </li>
+            <li>
+              <input type="radio" id="inscripcion-fp2" name="modalidad" value="fp2">
+              <label for="inscripcion-fp2">FP2</label>
+            </li>
+            <li>
+              <input type="radio" id="inscripcion-otros" name="modalidad" value="otros">
+              <label for="inscripcion-otros">Otros (especifique):</label>
+              <input type="text" name="otros-estudios" aria-label="Especifique otros estudios">
+            </li>
+          </ul>
+          <p>
+            <input type="radio" id="inscripcion-prueba-libre" name="forma-acceso" value="prueba-libre">
+            <label for="inscripcion-prueba-libre">Prueba libre</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Documentos adjuntados</legend>
+          <p>
+            <input type="checkbox" id="inscripcion-fotocopia-dni" name="documentos" value="fotocopia-dni">
+            <label for="inscripcion-fotocopia-dni">Fotocopia DNI</label>
+            <input type="checkbox" id="inscripcion-certificado" name="documentos" value="certificado-academico">
+            <label for="inscripcion-certificado">Certificado académico</label>
+          </p>
+          <p>
+            <input type="checkbox" id="inscripcion-otros-documentos" name="documentos" value="otros">
+            <label for="inscripcion-otros-documentos">Otros documentos (especifique):</label>
+            <input type="text" name="otros-documentos" aria-label="Especifique otros documentos">
+          </p>
+        </fieldset>
+        <p>
+          <button type="submit">Enviar solicitud</button>
+          <button type="reset">Limpiar datos</button>
+        </p>
+      </form>
+    </section>
+
+    <section aria-labelledby="cuestionario">
+      <h2 id="cuestionario">Cuestionario Amigos de la informática</h2>
+      <form>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <p>
+            <label for="amigos-nombre">Nombre:</label>
+            <input type="text" id="amigos-nombre" name="nombre">
+          </p>
+          <p>
+            <label for="amigos-domicilio">Domicilio:</label>
+            <input type="text" id="amigos-domicilio" name="domicilio" placeholder="Calle, número y localidad">
+          </p>
+          <p>
+            <label for="amigos-pais">País de origen:</label>
+            <select id="amigos-pais" name="pais">
+              <option value="espana">España</option>
+            </select>
+          </p>
+          <p>
+            <label for="amigos-fecha">Fecha de nacimiento:</label>
+            <input type="date" id="amigos-fecha" name="fecha-nacimiento">
+          </p>
+          <p>
+            <label for="amigos-correo">Correo electrónico:</label>
+            <input type="email" id="amigos-correo" name="correo">
+          </p>
+          <p>
+            <label for="amigos-telefono">Teléfono:</label>
+            <input type="tel" id="amigos-telefono" name="telefono">
+          </p>
+          <fieldset>
+            <legend>Estado civil</legend>
+            <input type="radio" id="amigos-soltero" name="estado-civil" value="soltero">
+            <label for="amigos-soltero">Solter@</label>
+            <input type="radio" id="amigos-casado" name="estado-civil" value="casado">
+            <label for="amigos-casado">Casad@</label>
+            <input type="radio" id="amigos-separado" name="estado-civil" value="separado">
+            <label for="amigos-separado">Separad@</label>
+            <input type="radio" id="amigos-viudo" name="estado-civil" value="viudo">
+            <label for="amigos-viudo">Viud@</label>
+          </fieldset>
+          <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" id="amigos-hombre" name="sexo" value="hombre">
+            <label for="amigos-hombre">Hombre</label>
+            <input type="radio" id="amigos-mujer" name="sexo" value="mujer">
+            <label for="amigos-mujer">Mujer</label>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>Otra información de interés</legend>
+          <p>
+            <label for="amigos-componentes">Seleccione los componentes electrónicos con los que habitualmente trabajas:</label>
+            <select id="amigos-componentes" name="componentes" multiple size="4">
+              <option value="movil">Móvil</option>
+              <option value="tablet">Tablet</option>
+              <option value="ordenador">Ordenador</option>
+              <option value="ebook">Ebook</option>
+            </select>
+          </p>
+          <fieldset>
+            <legend>Seleccione tus actividades favoritas</legend>
+            <input type="checkbox" id="amigos-deporte" name="actividades" value="deporte">
+            <label for="amigos-deporte">Hacer deporte</label>
+            <input type="checkbox" id="amigos-salir" name="actividades" value="amigos">
+            <label for="amigos-salir">Salir con mis amigos</label>
+            <input type="checkbox" id="amigos-series" name="actividades" value="series">
+            <label for="amigos-series">Ver series, pelis,...</label>
+            <br>
+            <input type="checkbox" id="amigos-senderismo" name="actividades" value="senderismo">
+            <label for="amigos-senderismo">Realizar rutas de senderismo</label>
+            <input type="checkbox" id="amigos-cine" name="actividades" value="cine">
+            <label for="amigos-cine">Ir al cine</label>
+            <input type="checkbox" id="amigos-musica" name="actividades" value="musica">
+            <label for="amigos-musica">Escuchar música</label>
+          </fieldset>
+          <p>
+            <label for="amigos-motivo">Explique brevemente el motivo por el que desea ingresar en nuestro club:</label>
+            <br>
+            <textarea id="amigos-motivo" name="motivo" rows="4" cols="50"></textarea>
+          </p>
+          <p>
+            <label for="amigos-pelicula">Elige o escribe tu peli favorita:</label>
+            <input type="text" id="amigos-pelicula" name="pelicula">
+          </p>
+        </fieldset>
+        <p>
+          <button type="submit">Enviar</button>
+          <button type="reset">Cancelar</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../index.html">Volver al menú principal</a></p>
+  </footer>
+</body>
+</html>
