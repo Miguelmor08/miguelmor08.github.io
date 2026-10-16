@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario Amigos de la informática</title>
+</head>
+<body>
+  <h1>Rellena el siguiente cuestionario para formar parte del club de "Amigos de la informática"</h1>
+  <p><a href="../index.html">Volver al inicio</a></p>
+
+  <form>
+    <fieldset>
+      <legend>Datos personales</legend>
+
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+      </p>
+      <p>
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio" placeholder="Calle, número y localidad">
+      </p>
+      <p>
+        <label for="pais">País de origen:</label>
+        <select id="pais" name="pais">
+          <option value="espana">España</option>
+        </select>
+      </p>
+      <p>
+        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+      </p>
+      <p>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo">
+      </p>
+      <p>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+      </p>
+      <p>Estado civil:</p>
+      <input type="radio" id="soltero" name="estado-civil" value="soltero">
+      <label for="soltero">Solter@</label>
+      <input type="radio" id="casado" name="estado-civil" value="casado">
+      <label for="casado">Casad@</label>
+      <input type="radio" id="separado" name="estado-civil" value="separado">
+      <label for="separado">Separad@</label>
+      <input type="radio" id="viudo" name="estado-civil" value="viudo">
+      <label for="viudo">Viud@</label>
+      <p>Sexo:</p>
+      <input type="radio" id="hombre" name="sexo" value="hombre">
+      <label for="hombre">Hombre</label>
+      <input type="radio" id="mujer" name="sexo" value="mujer">
+      <label for="mujer">Mujer</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Otra información de interés</legend>
+
+      <p>
+        <label for="componentes">Seleccione los componentes electrónicos con los que habitualmente trabajas:</label>
+        <select id="componentes" name="componentes" multiple size="4">
+          <option value="movil">Móvil</option>
+          <option value="tablet">Tablet</option>
+          <option value="ordenador">Ordenador</option>
+          <option value="ebook">Ebook</option>
+        </select>
+      </p>
+      <p>Seleccione tus actividades favoritas:</p>
+      <input type="checkbox" id="deporte" name="actividades" value="deporte">
+      <label for="deporte">Hacer deporte</label>
+      <input type="checkbox" id="amigos" name="actividades" value="amigos">
+      <label for="amigos">Salir con mis amigos</label>
+      <input type="checkbox" id="series" name="actividades" value="series">
+      <label for="series">Ver series, pelis,...</label>
+      <br>
+      <input type="checkbox" id="senderismo" name="actividades" value="senderismo">
+      <label for="senderismo">Realizar rutas de senderismo</label>
+      <input type="checkbox" id="cine" name="actividades" value="cine">
+      <label for="cine">Ir al cine</label>
+      <input type="checkbox" id="musica" name="actividades" value="musica">
+      <label for="musica">Escuchar música</label>
+      <p>
+        <label for="motivo">Explique brevemente el motivo por el que desea ingresar en nuestro club:</label>
+        <br>
+        <textarea id="motivo" name="motivo" rows="4" cols="50"></textarea>
+      </p>
+      <p>
+        <label for="pelicula">Elige o escribe tu peli favorita:</label>
+        <input type="text" id="pelicula" name="pelicula">
+      </p>
+    </fieldset>
+
+    <p>
+      <button type="submit">Enviar</button>
+      <button type="reset">Cancelar</button>
+    </p>
+  </form>
+</body>
+</html>

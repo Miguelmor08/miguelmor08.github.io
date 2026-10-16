@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de inscripción</title>
+</head>
+<body>
+  <h1>Hoja de inscripción</h1>
+  <h2>En los ciclos formativos de grado superior</h2>
+  <p><a href="../index.html">Volver al inicio</a></p>
+
+  <form>
+    <fieldset>
+      <legend>Datos personales</legend>
+
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos">
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni">
+      </p>
+
+      <p>
+        <label for="localidad">Localidad de nacimiento:</label>
+        <input type="text" id="localidad" name="localidad">
+        <label for="provincia">Provincia:</label>
+        <select id="provincia" name="provincia">
+          <option value="huelva">Huelva</option>
+        </select>
+        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+      </p>
+
+      <p>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion">
+        <label for="codigo-postal">Código postal:</label>
+        <input type="text" id="codigo-postal" name="codigo-postal">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Forma de acceso</legend>
+
+      <p>
+        <input type="radio" id="acceso-directo" name="forma-acceso" value="directo">
+        <label for="acceso-directo">Directo</label>
+      </p>
+      <ul>
+        <li>
+          <input type="radio" id="bachillerato" name="modalidad" value="bachillerato">
+          <label for="bachillerato">Bachillerato Log. Modalidad:</label>
+          <input type="text" name="modalidad-bachillerato" aria-label="Modalidad de bachillerato">
+        </li>
+        <li>
+          <input type="radio" id="experimental" name="modalidad" value="experimental">
+          <label for="experimental">Experimental</label>
+        </li>
+        <li>
+          <input type="radio" id="cou" name="modalidad" value="cou">
+          <label for="cou">COU Opción:</label>
+          <input type="text" name="opcion-cou" aria-label="Opción de COU">
+        </li>
+        <li>
+          <input type="radio" id="fp2" name="modalidad" value="fp2">
+          <label for="fp2">FP2</label>
+        </li>
+        <li>
+          <input type="radio" id="otros-estudios" name="modalidad" value="otros">
+          <label for="otros-estudios">Otros (especifique):</label>
+          <input type="text" name="otros-estudios" aria-label="Especifique otros estudios">
+        </li>
+      </ul>
+
+      <p>
+        <input type="radio" id="prueba-libre" name="forma-acceso" value="prueba-libre">
+        <label for="prueba-libre">Prueba libre</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Documentos adjuntados</legend>
+      <p>
+        <input type="checkbox" id="fotocopia-dni" name="documentos" value="fotocopia-dni">
+        <label for="fotocopia-dni">Fotocopia DNI</label>
+        <input type="checkbox" id="certificado-academico" name="documentos" value="certificado-academico">
+        <label for="certificado-academico">Certificado académico</label>
+      </p>
+      <p>
+        <input type="checkbox" id="otros-documentos" name="documentos" value="otros">
+        <label for="otros-documentos">Otros documentos (especifique):</label>
+        <input type="text" name="otros-documentos" aria-label="Especifique otros documentos">
+      </p>
+    </fieldset>
+
+    <p>
+      <button type="submit">Enviar solicitud</button>
+      <button type="reset">Limpiar datos</button>
+    </p>
+  </form>
+</body>
+</html>
