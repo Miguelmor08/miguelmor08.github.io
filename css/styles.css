@@ -103,8 +103,8 @@ body {
 
 /* La portada usa rojo y negro, sin cambiar los estilos del resto de paginas. */
 body#inicio {
-  background: #eeeeee;
-  color: #111111;
+  background: #111111;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -149,7 +149,7 @@ body#inicio nav a {
 }
 
 body#inicio main {
-  background-color: #ffffff;
+  background-color: #1b1b1b;
   border-radius: 0.5rem;
   box-shadow: 0 1px 6px #0000001a;
   flex: 1;
@@ -162,26 +162,27 @@ body#inicio main {
 }
 
 body#inicio main h2 {
-  color: #111111;
+  color: #ffffff;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
 body#inicio main p {
-  color: #333333;
+  color: #eeeeee;
   font-size: 0.9rem;
 }
 
 /* Muestra la foto del instituto centrada en el panel de bienvenida. */
 body#inicio main img {
   display: block;
+  height: auto;
   margin: 1rem auto 0;
-  max-width: 180px;
+  max-width: 100px;
   width: 100%;
 }
 
 body#inicio footer {
-  background-color: #111111;
+  background-color: #c62828;
   color: #ffffff;
   margin-top: 0;
   padding: 0.75rem;
