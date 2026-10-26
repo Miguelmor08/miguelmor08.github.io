@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Miguel Moreno Morales">
+  <meta name="description" content="Solicita una reserva en el restaurante Picanton Morales.">
+  <meta name="keywords" content="reserva, restaurante, Picanton Morales, formulario">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de reserva - Picanton Morales</title>
+</head>
+<body>
+  <header>
+    <h1>Hoja de reserva</h1>
+    <nav aria-label="Navegación principal">
+      <a href="index.html">Volver al restaurante</a>
+      <a href="../index.html">Menú principal</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Rellena el siguiente formulario para solicitar una reserva</h2>
+    <form>
+      <p>
+        <label for="reserva-nombre">Su nombre:</label>
+        <input type="text" id="reserva-nombre" name="nombre" autocomplete="name" required>
+      </p>
+      <p>
+        <label for="reserva-clientes">Número de clientes:</label>
+        <input type="number" id="reserva-clientes" name="clientes" min="1" required>
+      </p>
+      <p>
+        <label for="reserva-correo">Su correo electrónico:</label>
+        <input type="email" id="reserva-correo" name="correo" autocomplete="email" required>
+      </p>
+      <p>
+        <label for="reserva-telefono">Su teléfono:</label>
+        <input type="tel" id="reserva-telefono" name="telefono" autocomplete="tel" required>
+      </p>
+      <p>
+        <label for="reserva-fecha">Fecha de la reserva:</label>
+        <input type="date" id="reserva-fecha" name="fecha" required>
+      </p>
+      <p>
+        <label for="reserva-hora">Hora de la reserva:</label>
+        <input type="time" id="reserva-hora" name="hora" required>
+      </p>
+      <p>
+        <label for="reserva-mensaje">Su mensaje:</label>
+        <br>
+        <textarea id="reserva-mensaje" name="mensaje" rows="4" cols="40"></textarea>
+      </p>
+      <button type="submit">Solicitar reserva</button>
+    </form>
+    <p>Consulte nuestra política de privacidad para saber cómo protegemos sus datos.</p>
+  </main>
+  <footer>
+    <p><a href="index.html">Volver al menú del restaurante</a></p>
+  </footer>
+</body>
+</html>

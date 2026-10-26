@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Miguel Moreno Morales">
+  <meta name="description" content="Comparte tu opinión sobre los platos del restaurante Picanton Morales.">
+  <meta name="keywords" content="reseña, opinión, restaurante, Picanton Morales, formulario">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de reseña - Picanton Morales</title>
+</head>
+<body>
+  <header>
+    <h1>Formulario de reseña</h1>
+    <nav aria-label="Navegación principal">
+      <a href="index.html">Volver al restaurante</a>
+      <a href="../index.html">Menú principal</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Cuéntanos qué te ha parecido nuestro menú</h2>
+    <form>
+      <p>
+        <label for="resena-plato">Plato:</label>
+        <select id="resena-plato" name="plato" required>
+          <option value="">Seleccione un plato</option>
+          <option value="tacos-al-pastor">Tacos al pastor</option>
+          <option value="enchiladas-rojas">Enchiladas rojas</option>
+          <option value="chile-en-nogada">Chile en nogada</option>
+        </select>
+      </p>
+      <p>
+        <label for="resena-nombre">Nombre:</label>
+        <input type="text" id="resena-nombre" name="nombre" autocomplete="name" required>
+      </p>
+      <p>
+        <label for="resena-texto">Reseña del plato:</label>
+        <br>
+        <textarea id="resena-texto" name="resena" rows="5" cols="40" required></textarea>
+      </p>
+      <button type="submit">Enviar reseña</button>
+    </form>
+  </main>
+  <footer>
+    <p><a href="index.html">Volver al menú del restaurante</a></p>
+  </footer>
+</body>
+</html>
