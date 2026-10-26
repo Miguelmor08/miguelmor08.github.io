@@ -6,10 +6,11 @@
   <meta name="description" content="Horario semanal de clases del ciclo formativo.">
   <meta name="keywords" content="horario, clases, ciclo formativo, módulos">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
   <title>Horario de clases</title>
 </head>
 <body>
-  <header>
+  <header class="cabecera">
     <h1>Horario de clases</h1>
     <nav aria-label="Navegación principal">
       <a href="../index.html">Volver al menú principal</a>
@@ -18,82 +19,83 @@
   <main>
     <p><a href="../index.html">Volver a los enlaces de las prácticas</a></p>
 
-<table border="1">
+<table id="tabla-horario">
+  <caption>Horario semanal de clases</caption>
   <thead>
     <tr>
-      <th>Hora</th>
-      <th>Lunes</th>
-      <th>Martes</th>
-      <th>Miércoles</th>
-      <th>Jueves</th>
-      <th>Viernes</th>
+      <th scope="col">Hora</th>
+      <th scope="col">Lunes</th>
+      <th scope="col">Martes</th>
+      <th scope="col">Miércoles</th>
+      <th scope="col">Jueves</th>
+      <th scope="col">Viernes</th>
     </tr>
   </thead>
   <tbody>
     <!-- 08:15 - 09:15 -->
     <tr>
-      <td>08:15 - 09:15</td>
-      <td>Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
-      <td>Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
-      <td>Optativa - Desarrollo web y programación<br><small>Rafael Ernesto Escobar Zurita</small></td>
-      <td>Seguridad Informática<br><small>Antonio Jesús López García</small></td>
-      <td>Seguridad Informática<br><small>Antonio Jesús López García</small></td>
+      <th scope="row">08:15 - 09:15</th>
+      <td class="modulo sistemas-operativos">Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
+      <td class="modulo sistemas-operativos">Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
+      <td class="modulo desarrollo-web">Optativa - Desarrollo web y programación<br><small>Rafael Ernesto Escobar Zurita</small></td>
+      <td class="modulo seguridad">Seguridad Informática<br><small>Antonio Jesús López García</small></td>
+      <td class="modulo seguridad">Seguridad Informática<br><small>Antonio Jesús López García</small></td>
     </tr>
 
     <!-- 09:15 - 10:15 -->
     <tr>
-      <td>09:15 - 10:15</td>
-      <td>Aplicaciones Web<br><small>Rafael Ernesto Escobar Zurita</small></td>
-      <td>Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
-      <td>Aplicaciones Web<br><small>Rafael Ernesto Escobar Zurita</small></td>
-      <td>Seguridad Informática<br><small>Antonio Jesús López García</small></td>
-      <td>Seguridad Informática<br><small>Antonio Jesús López García</small></td>
+      <th scope="row">09:15 - 10:15</th>
+      <td class="modulo aplicaciones-web">Aplicaciones Web<br><small>Rafael Ernesto Escobar Zurita</small></td>
+      <td class="modulo sistemas-operativos">Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
+      <td class="modulo aplicaciones-web">Aplicaciones Web<br><small>Rafael Ernesto Escobar Zurita</small></td>
+      <td class="modulo seguridad">Seguridad Informática<br><small>Antonio Jesús López García</small></td>
+      <td class="modulo seguridad">Seguridad Informática<br><small>Antonio Jesús López García</small></td>
     </tr>
 
     <!-- 10:15 - 11:15 -->
     <tr>
-      <td>10:15 - 11:15</td>
-      <td>Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
-      <td>Inglés Profesional GM<br><small>Clara Ruiz Roldán</small></td>
-      <td>Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
-      <td>Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
-      <td>Optativa - Desarrollo web y programación<br><small>Rafael Ernesto Escobar Zurita</small></td>
+      <th scope="row">10:15 - 11:15</th>
+      <td class="modulo servicios-red">Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
+      <td class="modulo ingles">Inglés Profesional GM<br><small>Clara Ruiz Roldán</small></td>
+      <td class="modulo servicios-red">Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
+      <td class="modulo sistemas-operativos">Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
+      <td class="modulo desarrollo-web">Optativa - Desarrollo web y programación<br><small>Rafael Ernesto Escobar Zurita</small></td>
     </tr>
 
     <!-- RECREO -->
     <tr>
-      <td>11:15 - 11:45</td>
-      <td colspan="5" align="center"><strong>RECREO</strong></td>
+      <th scope="row">11:15 - 11:45</th>
+      <td class="recreo" colspan="5"><strong>RECREO</strong></td>
     </tr>
 
     <!-- 11:45 - 12:45 -->
     <tr>
-      <td>11:45 - 12:45</td>
-      <td>Proyecto Intermodular<br><small>Manuel González Amate</small></td>
-      <td>Itinerario Personal para la Empleabilidad II<br><small>Matilde Navarro León</small></td>
-      <td>Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
-      <td>Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
-      <td>Itinerario Personal para la Empleabilidad II<br><small>Matilde Navarro León</small></td>
+      <th scope="row">11:45 - 12:45</th>
+      <td class="modulo proyecto">Proyecto Intermodular<br><small>Manuel González Amate</small></td>
+      <td class="modulo empleabilidad">Itinerario Personal para la Empleabilidad II<br><small>Matilde Navarro León</small></td>
+      <td class="modulo sistemas-operativos">Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
+      <td class="modulo servicios-red">Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
+      <td class="modulo empleabilidad">Itinerario Personal para la Empleabilidad II<br><small>Matilde Navarro León</small></td>
     </tr>
 
     <!-- 12:45 - 13:45 -->
     <tr>
-      <td>12:45 - 13:45</td>
-      <td>Optativa - Desarrollo web y programación<br><small>Rafael Ernesto Escobar Zurita</small></td>
-      <td>Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
-      <td>Proyecto Intermodular<br><small>Manuel González Amate</small></td>
-      <td>Aplicaciones Web<br><small>Rafael Ernesto Escobar Zurita</small></td>
-      <td>Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
+      <th scope="row">12:45 - 13:45</th>
+      <td class="modulo desarrollo-web">Optativa - Desarrollo web y programación<br><small>Rafael Ernesto Escobar Zurita</small></td>
+      <td class="modulo servicios-red">Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
+      <td class="modulo proyecto">Proyecto Intermodular<br><small>Manuel González Amate</small></td>
+      <td class="modulo aplicaciones-web">Aplicaciones Web<br><small>Rafael Ernesto Escobar Zurita</small></td>
+      <td class="modulo sistemas-operativos">Sistemas Operativos en Red<br><small>Manuel González Amate</small></td>
     </tr>
 
     <!-- 13:45 - 14:45 -->
     <tr>
-      <td>13:45 - 14:45</td>
-      <td>Itinerario Personal para la Empleabilidad II<br><small>Matilde Navarro León</small></td>
-      <td>Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
-      <td>Inglés Profesional GM<br><small>Clara Ruiz Roldán</small></td>
-      <td>Aplicaciones Web<br><small>Rafael Ernesto Escobar Zurita</small></td>
-      <td>Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
+      <th scope="row">13:45 - 14:45</th>
+      <td class="modulo empleabilidad">Itinerario Personal para la Empleabilidad II<br><small>Matilde Navarro León</small></td>
+      <td class="modulo servicios-red">Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
+      <td class="modulo ingles">Inglés Profesional GM<br><small>Clara Ruiz Roldán</small></td>
+      <td class="modulo aplicaciones-web">Aplicaciones Web<br><small>Rafael Ernesto Escobar Zurita</small></td>
+      <td class="modulo servicios-red">Servicios en Red<br><small>Francisco José Aranda Serrano</small></td>
     </tr>
   </tbody>
   <tfoot>
@@ -103,7 +105,7 @@
   </tfoot>
 </table>
   </main>
-  <footer>
+  <footer class="pie">
     <p>&copy; Miguel Moreno Morales</p>
   </footer>
 </body>

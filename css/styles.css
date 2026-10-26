@@ -1,0 +1,116 @@
+/* Reinicio basico para que todos los elementos partan de la misma base. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colores generales elegidos: texto azul oscuro y fondo azul claro. */
+body {
+  background: linear-gradient(135deg, #f0f7ff, #dcecff);
+  color: #17324d;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+/* El nombre del alumno usa un degradado de la misma gama que el fondo. */
+#alumno {
+  background: linear-gradient(90deg, #dcecff, #b8d8f5);
+  border: 1px solid #8bb8df;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+/* Clase compartida por la cabecera y el pie del horario. */
+.cabecera,
+.pie {
+  background-color: rgb(220, 236, 255);
+  border: 1px solid rgb(139, 184, 223);
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.cabecera nav a,
+.pie a {
+  margin-right: 1rem;
+}
+
+/* Tabla del horario con bordes sencillos y texto centrado. */
+#tabla-horario {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+#tabla-horario caption {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#tabla-horario th,
+#tabla-horario td {
+  border: 1px solid #526b82;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+#tabla-horario thead,
+#tabla-horario tfoot {
+  background-color: #c5ddf4;
+}
+
+/* Cada modulo tiene su propia clase y su propio color RGB. */
+.sistemas-operativos {
+  background-color: rgb(66, 196, 150);
+}
+
+.desarrollo-web {
+  background-color: rgb(76, 190, 220);
+}
+
+.seguridad {
+  background-color: rgb(245, 137, 78);
+}
+
+.aplicaciones-web {
+  background-color: rgb(232, 126, 183);
+}
+
+.servicios-red {
+  background-color: rgb(158, 133, 220);
+}
+
+.ingles {
+  background-color: rgb(246, 205, 91);
+}
+
+.proyecto {
+  background-color: rgb(132, 199, 105);
+}
+
+.empleabilidad {
+  background-color: rgb(224, 151, 103);
+}
+
+/* Color de recreo expresado en el formato OKLCH. */
+.recreo {
+  background-color: oklch(78% 0.16 330);
+  font-weight: bold;
+}
+
+/* Recupera el espacio de lectura despues del reinicio general. */
+main,
+footer {
+  margin-top: 1rem;
+}
+
+@media (max-width: 700px) {
+  #tabla-horario th,
+  #tabla-horario td {
+    padding: 0.25rem;
+    font-size: 0.8rem;
+  }
+}
