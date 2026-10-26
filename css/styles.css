@@ -5,100 +5,150 @@
   padding: 0;
 }
 
-/* Colores generales elegidos: texto azul oscuro y fondo azul claro. */
+/* El sitio usa una base de rojo y negro con fondo claro para facilitar la lectura. */
 body {
-  background: linear-gradient(135deg, #f0f7ff, #dcecff);
-  color: #17324d;
+  background: linear-gradient(135deg, #fff5f5, #f0e8e8);
+  color: #1a1a1a;
   font-family: Arial, sans-serif;
   line-height: 1.5;
   padding: 1rem;
 }
 
-/* El nombre del alumno usa un degradado de la misma gama que el fondo. */
+/* El nombre del alumno usa un degradado de la paleta roja del tema. */
 #alumno {
-  background: linear-gradient(90deg, #dcecff, #b8d8f5);
-  border: 1px solid #8bb8df;
+  background: linear-gradient(90deg, #7f1010, #d32f2f);
+  border: 1px solid #8b1e1e;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   padding: 1rem;
 }
 
-/* Clase compartida por la cabecera y el pie del horario. */
+/* La cabecera y el pie comparten el fondo negro y el borde rojo del tema. */
 .cabecera,
 .pie {
-  background-color: rgb(220, 236, 255);
-  border: 1px solid rgb(139, 184, 223);
+  background-color: rgb(28, 28, 28);
+  border: 1px solid rgb(190, 45, 45);
+  color: #ffffff;
   margin-bottom: 1rem;
   padding: 1rem;
 }
 
+/* Los enlaces de cabecera y pie contrastan en el fondo oscuro. */
 .cabecera nav a,
 .pie a {
+  color: #ffffff;
   margin-right: 1rem;
 }
 
-/* Tabla del horario con bordes sencillos y texto centrado. */
+/* La tabla del horario ocupa el ancho disponible y une sus bordes. */
 #tabla-horario {
   border-collapse: collapse;
   margin: 1rem 0;
   width: 100%;
 }
 
+/* El titulo de la tabla queda centrado y destacado. */
 #tabla-horario caption {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
+/* Celdas con borde oscuro, espacio interior y texto centrado. */
 #tabla-horario th,
 #tabla-horario td {
-  border: 1px solid #526b82;
+  border: 1px solid #292929;
   padding: 0.6rem;
   text-align: center;
 }
 
+/* Cabecera y pie de la tabla usan rojo oscuro con texto blanco. */
 #tabla-horario thead,
 #tabla-horario tfoot {
-  background-color: #c5ddf4;
+  background-color: #8f1717;
+  color: #ffffff;
 }
 
-/* Cada modulo tiene su propia clase y su propio color RGB. */
+/* La columna horaria queda oscura para separar las horas de las asignaturas. */
+#tabla-horario tbody th {
+  background-color: #242424;
+  color: #ffffff;
+}
+
+/* Identifica sistemas operativos en red con un color RGB propio. */
 .sistemas-operativos {
-  background-color: rgb(66, 196, 150);
+  background-color: rgb(112, 190, 158);
 }
 
+/* Diferencia el modulo de desarrollo web mediante otro color RGB. */
 .desarrollo-web {
-  background-color: rgb(76, 190, 220);
+  background-color: rgb(112, 181, 205);
 }
 
+/* Identifica el modulo de seguridad con un color RGB propio. */
 .seguridad {
-  background-color: rgb(245, 137, 78);
+  background-color: rgb(224, 139, 108);
 }
 
+/* Distingue aplicaciones web del resto de asignaturas. */
 .aplicaciones-web {
-  background-color: rgb(232, 126, 183);
+  background-color: rgb(211, 139, 177);
 }
 
+/* Asigna un tono independiente a servicios en red. */
 .servicios-red {
-  background-color: rgb(158, 133, 220);
+  background-color: rgb(157, 145, 202);
 }
 
+/* Asigna un tono independiente a ingles profesional. */
 .ingles {
-  background-color: rgb(246, 205, 91);
+  background-color: rgb(222, 192, 106);
 }
 
+/* Identifica proyecto intermodular con un color propio. */
 .proyecto {
-  background-color: rgb(132, 199, 105);
+  background-color: rgb(143, 190, 112);
 }
 
+/* Distingue itinerario de empleabilidad en la tabla. */
 .empleabilidad {
-  background-color: rgb(224, 151, 103);
+  background-color: rgb(207, 157, 112);
 }
 
-/* Color de recreo expresado en el formato OKLCH. */
+/* El texto de las asignaturas se mantiene oscuro sobre sus fondos claros. */
+.modulo {
+  color: #1a1a1a;
+}
+
+/* El recreo usa OKLCH y un tono rojo rosado que destaca en el horario. */
 .recreo {
-  background-color: oklch(78% 0.16 330);
+  background-color: oklch(76% 0.13 25);
+  color: #1a1a1a;
   font-weight: bold;
+}
+
+/* El horario conserva el tema rojo y negro con contraste de texto claro. */
+body#horario-clases {
+  background: linear-gradient(135deg, #171717, #303030);
+  color: #ffffff;
+}
+
+/* El encabezado del horario usa negro con borde rojo. */
+body#horario-clases .cabecera {
+  background-color: #1c1c1c;
+  border-color: #c62828;
+}
+
+/* El enlace de regreso se distingue con el color rojo del tema. */
+body#horario-clases main > p a {
+  color: #ff7777;
+}
+
+/* El pie del horario cierra la pagina con el mismo contraste rojo y negro. */
+body#horario-clases .pie {
+  background-color: #1c1c1c;
+  border-color: #c62828;
+  margin-bottom: 0;
 }
 
 /* La portada usa rojo y negro, sin cambiar los estilos del resto de paginas. */
@@ -111,12 +161,14 @@ body#inicio {
   padding: 0;
 }
 
+/* Centra el titulo dentro de la cabecera roja de la portada. */
 body#inicio header {
   background-color: #c62828;
   color: #ffffff;
   text-align: center;
 }
 
+/* Mantiene el nombre en rojo y blanco dentro de la cabecera. */
 body#inicio #alumno {
   background: linear-gradient(90deg, #b71c1c, #e53935);
   border: 0;
@@ -128,26 +180,31 @@ body#inicio #alumno {
   padding: 1rem;
 }
 
+/* La navegacion usa negro para contrastar con la cabecera roja. */
 body#inicio nav {
   background-color: #111111;
   padding: 0.4rem;
 }
 
+/* Quita las viñetas del menu principal. */
 body#inicio nav ul {
   list-style: none;
 }
 
+/* Coloca los enlaces principales en una linea. */
 body#inicio nav li {
   display: inline;
   margin: 0 0.6rem;
 }
 
+/* Hace los enlaces del menu legibles sobre fondo negro. */
 body#inicio nav a {
   color: #ffffff;
   font-size: 0.8rem;
   text-decoration: none;
 }
 
+/* Centra el panel principal y reserva espacio para la foto del instituto. */
 body#inicio main {
   background-color: #1b1b1b;
   border-radius: 0.5rem;
@@ -161,12 +218,14 @@ body#inicio main {
   width: calc(100% - 2rem);
 }
 
+/* Destaca el titulo del panel de bienvenida. */
 body#inicio main h2 {
   color: #ffffff;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
+/* Mantiene legible el texto de introduccion en el panel oscuro. */
 body#inicio main p {
   color: #eeeeee;
   font-size: 0.9rem;
@@ -181,6 +240,7 @@ body#inicio main img {
   width: 100%;
 }
 
+/* Cierra la portada con un pie rojo y texto blanco. */
 body#inicio footer {
   background-color: #c62828;
   color: #ffffff;
@@ -195,7 +255,9 @@ footer {
   margin-top: 1rem;
 }
 
+/* Reduce espacios y texto en pantallas estrechas para conservar la lectura. */
 @media (max-width: 700px) {
+  /* Reduce el tamano de las celdas de la tabla en pantallas estrechas. */
   #tabla-horario th,
   #tabla-horario td {
     padding: 0.25rem;
